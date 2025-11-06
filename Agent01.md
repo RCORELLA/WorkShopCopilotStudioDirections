@@ -115,6 +115,13 @@ https://www.businesscentral.com
    - Mobile app
    - Other channels
 
+
+<img width="952" height="608" alt="image" src="https://github.com/user-attachments/assets/47a3a5d4-b77e-4d82-8bc6-30bc03d1acf0" />
+
+
+
+
+
 ## Best Practices for Agent Instructions
 
 - **Be specific**: Clear instructions produce better results
