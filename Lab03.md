@@ -9,7 +9,7 @@
 
 ## Overview
 
-This guide will help you create a topic that allows your Copilot agent to retrieve and display customer information from Business Central.
+This guide will help you create a topic that allows your Copilot agent to retrieve and display the customer list from Business Central.
 
 ---
 
