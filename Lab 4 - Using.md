@@ -61,14 +61,24 @@ Add trigger phrases that will activate this topic:
 <img width="789" height="697" alt="image" src="https://github.com/user-attachments/assets/b86711d2-0936-4689-92a8-6d4929dfcf81" />
 
 
+
 4. Create an **Agent Flow** (Power Automate)
+
+   <img width="936" height="571" alt="image" src="https://github.com/user-attachments/assets/e2f90469-1fd8-410d-9c29-1ac3a51f653d" />
+
+   Use the action **Create record (V3)**
+
+   <img width="790" height="614" alt="image" src="https://github.com/user-attachments/assets/15c913ff-ce43-4df7-9512-3d388a8fb624" />
    
-   <img width="586" height="629" alt="image" src="https://github.com/user-attachments/assets/6b4ef3ef-d9cb-4316-b8d0-6ded82f13d19" />
+   Obtain the response to Copilot Studio:
+
+   <img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/cd1f79e2-7466-4598-ba31-f52cd747f441" />
 
 
-## Step 6: Show the result adding other message with the variable.
+## Step 6: Show the Employee No. result adding other message with the variable.
 
-<img width="527" height="219" alt="image" src="https://github.com/user-attachments/assets/22e36763-84e5-4b46-a250-60b24486eb6a" />
+<img width="559" height="472" alt="image" src="https://github.com/user-attachments/assets/5e458430-cc1b-42dd-b392-94adf48c29b7" />
+
 
 
 ## Step 7: Test Your Topic
@@ -77,7 +87,7 @@ Add trigger phrases that will activate this topic:
 2. Click **Test** to open the test pane
 3. Try trigger phrases:
 ```
-   - "Show me customer List from Business Central"
+   - "I need create a new employee in Business Central"
   
 ```
 4. Verify:
