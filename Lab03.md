@@ -39,7 +39,7 @@ Add trigger phrases that will activate this topic:
 3. Click **Save**
 <img width="542" height="286" alt="image" src="https://github.com/user-attachments/assets/df5f73f9-61b3-46f5-8ecf-9fa8f399b9c4" />
 
-## Step 4: Add a Question Node Show a message
+## Step 4: Add a Message Node to Show the response
 
 1. Click the **+** button below the trigger node
 2. Select **Send a message**
