@@ -87,7 +87,7 @@ Add trigger phrases that will activate this topic:
 2. Click **Test** to open the test pane
 3. Try trigger phrases:
 ```
-   - "I need create a new employee in Business Central"
+   - "I need to create a new employee in Business Central"
   
 ```
 4. Verify:
