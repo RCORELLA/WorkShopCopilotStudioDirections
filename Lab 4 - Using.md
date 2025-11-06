@@ -7,10 +7,6 @@
 - Business Central connector permissions
 - Admin or maker role in Copilot Studio
 
-## Overview
-
-This guide will help you create a topic that allows your Copilot agent to retrieve and display customer information from Business Central.
-
 ---
 
 ## Step 1: Access Your Agent in Copilot Studio
