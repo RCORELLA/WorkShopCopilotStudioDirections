@@ -10,8 +10,8 @@
 1. Navigate to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)
 2. Click **Sign in** in the top right corner
 3. Enter your Microsoft account credentials:
-   - **Email/Username**: DirectionsEMEAxx@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60)
-   - **Password**: AISkills2025
+   - **Email/Username**: RedCarpetxx@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60)
+   - **Password**: the password asigned
 4. Complete multi-factor authentication (MFA) if prompted
 
 
@@ -27,7 +27,7 @@
 ## Step 3: Configure Agent Instructions
 
 ### Basic Setup
-1. **Name your agent**: Enter a descriptive name: Business Central Consulting XXX  (where XXX are your initials)
+1. **Name your agent**: Enter a descriptive name: Business Central Consulting XX  (where XX are the two digits of your user)
 2. **Add a description**: Brief summary of the agent's purpose
     You are a Business Central agent to answer any questions you might have about Business Central.
 
