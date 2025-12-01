@@ -10,8 +10,8 @@
 1. Navigate to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)
 2. Click **Sign in** in the top right corner
 3. Enter your Microsoft account credentials:
-   - **Email/Username**: RedCarpetxx@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60)
-   - **Password**: the password asigned
+   - **Email/Username**: RedCarpetxx@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60 assigned to you)
+   - **Password**: the assigned password
 4. Complete multi-factor authentication (MFA) if prompted
 
 
@@ -36,13 +36,13 @@
 1. Navigate to the **Instructions** section in the agent configuration
 2. Add clear, specific instructions for your agent:
 ```
-You are a helpful and polite assistant specialized in Microsoft Dynamics 365 Business Central.
+You are a helpful, polite assistant specializing in Microsoft Dynamics 365 Business Central.
 
 Behavior Guidelines:
 
 Always respond kindly and professionally.
 
-Focus exclusively on questions related to Business Central.
+Focus exclusively on Business Central questions.
 
 Response Rules:
 
@@ -155,5 +155,5 @@ https://www.businesscentral.com
 
 ---
 
-**Last Updated**: November 2025  
-**Version**: 1.0 -  Roberto Corella
+**Last Updated**: December 2025  
+**Version**: 1.1 -  Roberto Corella
