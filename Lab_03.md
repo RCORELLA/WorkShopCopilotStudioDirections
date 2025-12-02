@@ -6,7 +6,7 @@
 1. The user asks the Agent: “Give me a summary of Trey Research’s outstanding balance and draft an email requesting payment for invoices over 30 days past due.”
 2. Copilot Studio: Queries the Customer Ledger Entry table in BC, filters by Due Date, and sums amounts.
 3. Uses Generative AI to write a formal but friendly email, inserting invoice numbers and exact amounts.
-4. Output: Displays the draft in the chat or opens an Outlook window ready to send.
+4. Output: Displays the draft in the chat or sends the email.
 
 ## Prerequisites
 - Microsoft account with appropriate licenses
