@@ -1,9 +1,23 @@
-# Getting Started with Microsoft Copilot Studio
+# The Pocket Sales Assistant
+
+**The Pain:** Salespeople on the road waste time calling the office to ask: “Do we have stock of this?” or “At what price should I sell this to the customer?”
+
+**The Exercise:** Create an agent that retrieves real-time data from **Business Central**
+
+**Flow:**
+1. The user writes in Teams: “How many Berlin Chairs (Item 1900-S) do we have and what’s the price for Adatum Corp?”
+2. Copilot Studio: Identifies the intent, uses the BC connector to query the Item table (Inventory) and the Sales Price table (customer-specific pricing).
+3. Response: “We have 45 units in the Central Warehouse. The special price for Adatum is €150. Would you like me to create a draft quote?”
+4. Extra Action: You can create a Sales Quote in BC.
+
+**Impact:** Zero friction in sales, immediate response to the client.
+
 
 ## Prerequisites
 - Microsoft account with appropriate licenses
 - Access to Copilot Studio (https://copilotstudio.microsoft.com)
 - Admin or maker permissions in your environment
+- Agent from Lab_01
 
 ## Step 1: Access Copilot Studio
 
@@ -15,110 +29,75 @@
 4. Complete multi-factor authentication (MFA) if prompted
 
 
-## Step 2: Create a New Agent
+## Step 2: Open your previous Agent
 
-1. Once logged in, click **Create** in the left navigation panel
-2. Select **New agent** from the options
-3. Choose your starting point:
-   - **Skip to configure**: Start from scratch
-   - **Use a template**: Choose from pre-built templates
-   - **Describe your agent**: Use AI to generate initial setup
+1. Once logged in, click **Business Central Consulting XX** in the left navigation panel
 
 ## Step 3: Configure Agent Instructions
-
-### Basic Setup
-1. **Name your agent**: Enter a descriptive name: Business Central Consulting XX  (where XX are the two digits of your user)
-2. **Add a description**: Brief summary of the agent's purpose
-    You are a Business Central agent to answer any questions you might have about Business Central.
-
 
 ### Define Agent Instructions
 1. Navigate to the **Instructions** section in the agent configuration
 2. Add clear, specific instructions for your agent:
 ```
-You are a helpful, polite assistant specializing in Microsoft Dynamics 365 Business Central.
-
-Behavior Guidelines:
-
-Always respond kindly and professionally.
-
-Focus exclusively on Business Central questions.
-
-Response Rules:
-
-✅ If the user asks about Business Central (features, setup, configuration, usage, troubleshooting, etc.), provide a clear and helpful answer.
-
-🚫 If the question is not related to Business Central, reply:
-
-“I’m sorry, but I can only assist with questions related to Microsoft Dynamics 365 Business Central.”
-
-Data Access:
-
-If the user requests information about customers, employees, or vendors in Business Central, use the available tools to retrieve that information.
-
-Do not make up or assume any data — only use verified Business Central records through the tools.
-
-Example Responses:
-
-Business Central-related:
-
-“Sure! In Business Central, you can view customer balances by navigating to the ‘Customers’ page and selecting the customer record you want.”
-
-Unrelated topic:
-
-“I’m sorry, but I can only help with Microsoft Dynamics 365 Business Central topics.”
+If you need to retrieve information from Business Central, use the MCP Business Central Server tool
 ```
 
+## Step 4: Configure the MCP Server in Business Central
+
+1. Open **Business Central** and seach for **MCP Server Configurations**
 
 
+[Business Central](https://businesscentral.dynamics.com/b7e83739-3b6d-4d6a-8e7e-15c3afb4ce70/CPH)
 
-### Key Components to Include:
-- **Role definition**: What is the agent's purpose?
-- **Behavioral guidelines**: How should it communicate?
-- **Scope boundaries**: What can/cannot it do?
-- **Escalation rules**: When to involve humans?
-- **Tone and style**: Formal, casual, technical?
+   
+   <img width="1023" height="252" alt="image" src="https://github.com/user-attachments/assets/b6e42d21-1e7b-430b-92d8-4858200057e8" />
 
-## Step 4: Configure Knowledge Sources (Optional)
+3. Click **New**
+4. As the name suggests **bcAgents**
+5. Set **Dynamic Tool Mode**
+6. Set **Discover additional Objects**
+7. Set **Active**
 
-1. Click **Knowledge** in the left panel
-2. Add knowledge sources:
-   - Upload documents (PDF, DOCX, TXT)
-   - Connect to SharePoint sites
-   - Add website URLs
-   - Connect to Dataverse tables
+   <img width="1259" height="601" alt="image" src="https://github.com/user-attachments/assets/97736479-d9c2-4bc7-91fa-41e83c420c47" />
 
-```
-https://www.businesscentral.com
-```
-## Step 5: Press the Create Button
 
-## Step 6: Test Your Agent
+## Step 5: Configure the tool in Copilot Studio
+
+1. Click **Tools** in the menu
+2. Click **Add a tool**
+3. Search for **Model Context Protocol** and add it
+   <img width="638" height="389" alt="image" src="https://github.com/user-attachments/assets/e5f0aaac-d0f5-46cc-ace4-ca79a86822c9" />
+
+4. Create a connection
+5. Click **Add and configure**
+   <img width="1257" height="744" alt="image" src="https://github.com/user-attachments/assets/e08048a0-c174-49af-b4b5-72c800572fbc" />
+
+6. Go to the **Inputs** area and introduce:
+      - Environment: CPH
+      - Company: CRONUS
+      - MCP Server Configuration: bcAgents (same name as in **Business Central**)
+        
+   <img width="1099" height="532" alt="image" src="https://github.com/user-attachments/assets/f19f9d1c-0185-4052-a4ea-737f80d82bfe" />
+
+
+## Step 6: Press the Save Button
+
+## Step 7: Refresh the tools
+
+   Press the refresh button to obtain the tools published for the MCP Server:
+
+   <img width="1050" height="489" alt="image" src="https://github.com/user-attachments/assets/9336f47a-8488-4a5d-a393-90274791218c" />
+
+## Step 8: Test Your Agent
 
 1. Click the **Test** button in the top right corner
 2. The test pane will open on the right side
-3. Start a conversation to validate:
-   - Agent understands instructions
-   - Responses align with guidelines
-   - Knowledge sources are properly integrated
-4. Iterate on instructions based on test results
+3. Start a conversation to validate
+4. Test with these prompts:
 
-## Step 7: Publish Your Agent
-
-1. Click **Publish** in the top right corner
-2. Review the changes summary
-3. Click **Publish** to confirm
-4. Choose deployment channels:
-   - Demo website
-   - Microsoft Teams
-   - Custom website
-   - Mobile app
-   - Other channels
-
-
-<img width="952" height="608" alt="image" src="https://github.com/user-attachments/assets/47a3a5d4-b77e-4d82-8bc6-30bc03d1acf0" />
-
-
+```
+If you need to retrieve information from Business Central, use the MCP Business Central Server tool
+```
 
 
 
@@ -130,28 +109,6 @@ https://www.businesscentral.com
 - **Iterate**: Test and refine instructions based on real interactions
 - **Document changes**: Keep track of instruction updates over time
 
-## Troubleshooting
-
-### Cannot Sign In
-- Verify your account has Copilot Studio licenses
-- Check with your IT admin for environment access
-- Clear browser cache and cookies
-
-### Agent Not Following Instructions
-- Make instructions more explicit and detailed
-- Break complex instructions into numbered steps
-- Add specific examples of desired behavior
-
-### Knowledge Sources Not Working
-- Ensure files are in supported formats
-- Check file size limits (typically 10MB per file)
-- Verify permissions for connected data sources
-
-## Additional Resources
-
-- [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/microsoft-copilot-studio/)
-- [Community Forums](https://powerusers.microsoft.com/t5/Copilot-Studio/ct-p/Copilot_Studio)
-- [Training Videos](https://learn.microsoft.com/training/browse/?products=copilot-studio)
 
 ---
 
