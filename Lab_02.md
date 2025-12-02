@@ -96,9 +96,20 @@ If you need to retrieve information from Business Central, use the MCP Business 
 4. Test with these prompts:
 
 ```
-If you need to retrieve information from Business Central, use the MCP Business Central Server tool
+Could you give me the customer list from Business Central?
 ```
+<img width="570" height="562" alt="image" src="https://github.com/user-attachments/assets/dbcbffbe-d3e2-467b-a4f9-a9395f6e4cd3" />
 
+```
+Could you give me the credit limit for the customer Adatum?
+
+```
+<img width="546" height="236" alt="image" src="https://github.com/user-attachments/assets/d4f6f608-ed49-41fb-a453-f692bccf2172" />
+
+```
+Could you give me the customer list ordered by sales?
+```
+<img width="539" height="362" alt="image" src="https://github.com/user-attachments/assets/8c060e6d-c60a-4f0b-b5c9-640670e4dc7e" />
 
 
 ## Best Practices for Agent Instructions
