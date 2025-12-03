@@ -104,7 +104,7 @@ Add trigger phrases that will activate this topic:
 }
 
 ```
-## Step 7: Create the json file for the adaptive card
+## Step 7: Copy the json file in the editor.
 
 <img width="1015" height="591" alt="image" src="https://github.com/user-attachments/assets/cee7e620-3c86-472e-a17f-0913e4b1d73c" />
 
@@ -115,37 +115,37 @@ Copy you json in the editor:
 
 Close the **adaptive card editor**
 
-## Step 8: Create a node to ask for the data
+Check for the variables:
 
-1. Click the **+** button below your question node
-2. Select **Add a Tool**
-3. Click **Basic Tools**
-4. Click **New Agent Flow**
-
-<img width="789" height="697" alt="image" src="https://github.com/user-attachments/assets/b86711d2-0936-4689-92a8-6d4929dfcf81" />
+<img width="601" height="524" alt="image" src="https://github.com/user-attachments/assets/575f62a7-3c43-4aca-bf29-6d506a4402ee" />
 
 
 
-4. Create an **Agent Flow** (Power Automate)
+## Step 8: Create an **Agent Flow** (Power Automate)
 
-   <img width="936" height="571" alt="image" src="https://github.com/user-attachments/assets/e2f90469-1fd8-410d-9c29-1ac3a51f653d" />
+1 - Create a new Node with **Add a tool**
+
+  <img width="899" height="635" alt="image" src="https://github.com/user-attachments/assets/72971c90-8b24-4d02-b3c1-b8c9bac4d640" />
+
 
    Use the action **Create record (V3)**
 
-   <img width="790" height="614" alt="image" src="https://github.com/user-attachments/assets/15c913ff-ce43-4df7-9512-3d388a8fb624" />
+   <img width="819" height="784" alt="image" src="https://github.com/user-attachments/assets/d2b86cb8-69d2-4a9a-998e-7e87f96d8acc" />
+
    
    Obtain the response to Copilot Studio:
 
-   <img width="800" height="200" alt="image" src="https://github.com/user-attachments/assets/cd1f79e2-7466-4598-ba31-f52cd747f441" />
+   <img width="853" height="362" alt="image" src="https://github.com/user-attachments/assets/49389cd9-c5b2-4389-a6a4-cdb4b325e0b7" />
 
 
-## Step 6: Show the Employee No. result adding other message with the variable.
+
+## Step 9: Show the Employee No. result adding other message with the variable.
 
 <img width="559" height="472" alt="image" src="https://github.com/user-attachments/assets/5e458430-cc1b-42dd-b392-94adf48c29b7" />
 
 
 
-## Step 7: Test Your Topic
+## Step 10: Test Your Topic
 
 1. Click **Save** in the top right
 2. Click **Test** to open the test pane
