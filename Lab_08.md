@@ -48,6 +48,12 @@
 ```
 <img width="811" height="656" alt="image" src="https://github.com/user-attachments/assets/848b37f9-f875-4740-9719-bc72e3c6fd1f" />
 
+5. Try these prompts:
+```
+   pull a list of customers from Business Central. Then create a dashboard in Excel with analysis of customers, sales, balance, sales person.... Apply professional formating.
+```
+
+<img width="1826" height="753" alt="image" src="https://github.com/user-attachments/assets/8c518171-ad9a-413f-96ed-170229287c0a" />
 
 
 ## Resources
