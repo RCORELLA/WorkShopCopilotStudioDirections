@@ -1,4 +1,4 @@
-# Create a Topic in Copilot Studio to create an Employee in Business Central
+# Create a Topic in Copilot Studio to Create an employee using Adaptative Card
 
 ## Prerequisites
 
@@ -36,7 +36,8 @@ Add trigger phrases that will activate this topic:
 ```
 3. Click **Save**
 
-<img width="468" height="279" alt="image" src="https://github.com/user-attachments/assets/66170016-05f6-40c8-a1a9-ce2093d055c5" />
+<img width="1124" height="556" alt="image" src="https://github.com/user-attachments/assets/f80b3b88-3a57-4f77-88ac-26b0dae15304" />
+
 
 
 ## Step 4: Add a Question Node Show a message
@@ -44,14 +45,77 @@ Add trigger phrases that will activate this topic:
 1. Click the **+** button below the trigger node
 2. Select **Ask a question**
 3. Configure the Node:
-   - Put the question: **Could you give me the employee name:**
-4. Indentify: Select **User's entire response**
-5. Change the variable name: varName
+   - Put the question: **Do you want to create a new employee:**
+4. Indentify: Select **Boolean**
+5. Create a condition
 
-<img width="488" height="366" alt="image" src="https://github.com/user-attachments/assets/8ce31baf-ec75-494a-bd2d-46bca0422edb" />
+<img width="900" height="514" alt="image" src="https://github.com/user-attachments/assets/5b85aa0a-0b5c-4a93-91c0-35748df34066" />
+
+## Step 5: Create a node to ask for the data with adaptive Card
+
+1. Click the **+** button below your question node
+2. Select **Ask with adaptive card**
+
+<img width="556" height="415" alt="image" src="https://github.com/user-attachments/assets/dabcb173-3d30-4d98-8202-95c9c174049a" />
+
+## Step 6: Create the json file for the adaptive card
+
+1. Use Copilot to create the json
+   Could you create an adatative card with Name, Surname, and Level. The level must be Level1 or Level2
+
+   You receive some similar to this:
+```
+   {
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "Input.Text",
+      "id": "name",
+      "label": "Name",
+      "isRequired": true,
+      "errorMessage": "Please enter a name."
+    },
+    {
+      "type": "Input.Text",
+      "id": "surname",
+      "label": "Surname",
+      "isRequired": true,
+      "errorMessage": "Please enter a surname."
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "level",
+      "label": "Level",
+      "style": "compact",
+      "choices": [
+        { "title": "Level1", "value": "Level1" },
+        { "title": "Level2", "value": "Level2" }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ]
+}
+
+```
+## Step 7: Create the json file for the adaptive card
+
+<img width="1015" height="591" alt="image" src="https://github.com/user-attachments/assets/cee7e620-3c86-472e-a17f-0913e4b1d73c" />
+
+Copy you json in the editor:
+
+<img width="1700" height="747" alt="image" src="https://github.com/user-attachments/assets/712a4343-7b4f-4165-a19f-ebe8b3e4fa3c" />
 
 
-## Step 5: Create a node to add a Tool
+Close the **adaptive card editor**
+
+## Step 8: Create a node to ask for the data
 
 1. Click the **+** button below your question node
 2. Select **Add a Tool**
