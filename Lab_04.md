@@ -1,4 +1,4 @@
-# Create a Topic in Copilot Studio to Read Companies from Business Central
+# Create a Connector in Copilot Studio to Read Companies from Business Central
 
 ## Prerequisites
 
