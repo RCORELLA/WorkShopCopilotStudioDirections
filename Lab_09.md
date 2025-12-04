@@ -1,4 +1,4 @@
-# Getting Started with Microsoft Copilot Studio
+# Creating Prompts
 
 ## Prerequisites
 - Microsoft account with appropriate licenses
