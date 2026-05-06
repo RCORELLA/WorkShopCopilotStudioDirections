@@ -155,5 +155,5 @@ https://www.businesscentral.com
 
 ---
 
-**Last Updated**: December 2025  
-**Version**: 1.1 -  Roberto Corella
+**Last Updated**: Enero 26  
+**Version**: 1.2 -  Roberto Corella
