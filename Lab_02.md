@@ -24,7 +24,7 @@
 1. Navigate to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)
 2. Click **Sign in** in the top right corner
 3. Enter your Microsoft account credentials:
-   - **Email/Username**: RedCarpetxx@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60 assigned to you)
+   - **Email/Username**: youremail_xx@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60 assigned to you)
    - **Password**: the assigned password
 4. Complete multi-factor authentication (MFA) if prompted
 
