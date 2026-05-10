@@ -1,4 +1,4 @@
-<img width="460" height="105" alt="image" src="https://github.com/user-attachments/assets/d7b9a5ce-b3c6-441f-8297-f36d59ea673f" /># Getting Started with Microsoft Copilot Studio
+# Getting Started with Microsoft Copilot Studio
 
 ## Prerequisites
 - Microsoft account with appropriate licenses
