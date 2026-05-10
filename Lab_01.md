@@ -1,4 +1,4 @@
-# Getting Started with Microsoft Copilot Studio
+<img width="460" height="105" alt="image" src="https://github.com/user-attachments/assets/d7b9a5ce-b3c6-441f-8297-f36d59ea673f" /># Getting Started with Microsoft Copilot Studio
 
 ## Prerequisites
 - Microsoft account with appropriate licenses
@@ -10,7 +10,7 @@
 1. Navigate to [Microsoft Copilot Studio](https://copilotstudio.microsoft.com)
 2. Click **Sign in** in the top right corner
 3. Enter your Microsoft account credentials:
-   - **Email/Username**: companialxx@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60 assigned to you)
+   - **Email/Username**: directionsASIA_XX@CRMbc877736.onmicrosoft.com  (xx is a number between 01 and 60 assigned to you)
    - **Password**: the assigned password
 4. Complete multi-factor authentication (MFA) if prompted
 
