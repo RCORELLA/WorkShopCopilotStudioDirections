@@ -58,4 +58,4 @@ Click **Save**
 
 R.Corella
 
-v. 1.0   December 2025
+v. 1.0   September 2026
