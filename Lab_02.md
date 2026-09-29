@@ -73,8 +73,8 @@ If you need to retrieve information from Business Central, use the MCP Business 
    <img width="1257" height="744" alt="image" src="https://github.com/user-attachments/assets/e08048a0-c174-49af-b4b5-72c800572fbc" />
 
 6. Go to the **Inputs** area and introduce:
-      - Environment: CPH
-      - Company: CRONUS
+      - Environment: YOUR ENVIRONMENT
+      - Company: YOUR COMPANY
       - MCP Server Configuration: bcAgents (same name as in **Business Central**)
         
    <img width="1099" height="532" alt="image" src="https://github.com/user-attachments/assets/f19f9d1c-0185-4052-a4ea-737f80d82bfe" />
@@ -123,5 +123,5 @@ Could you give me the customer list ordered by sales?
 
 ---
 
-**Last Updated**: December 2025  
+**Last Updated**: September 2026  
 **Version**: 1.1 -  Roberto Corella
